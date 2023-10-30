@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{008080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{James Brown}
+\tagline{Undergraduate Physicist}
+\photo{2.5cm}{2}
+\personalinfo{%
+  
+  \email{jamesbrown.jb1234@gmail.com}
+  \phone{+353 0868945115}
+  \location{Cork, Ireland}
+  \homepage{ https://james-brown12.github.io/}
+  \linkedin{linkedin.com/in/james-brown-584924260}
+  \github{github.com/James-Brown12}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{Experience}
+\cvevent{Summer Fellowship}{Tyndall National Institute}{Jun. 2023 - Aug. 2024}{Cork, Ireland}
+\begin{itemize}
+\item {Conducted research on the development of interatomic potentials for Aluminum Nitride (AlN) and Scandium Aluminum Nitride (ScAlN) using machine learning techniques.}
+\item {Utilised DeepMD-kit to train a deep potential model on data obtained from ab initio molecular dynamics simulations performed using Density Functional Theory}
+\item {Gained experience in Python programming, Linux systems, high-performance computing cluster use, and the Atomic Simulation Environment (ASE)}
+\item {Built skills in teamwork, working to deadlines, an developing research skills.}.
+\item{Participated in training courses including bystander intervention, public engagement, embedded systems, and presentation skills.}
+\item {Presented my results in a research poster in Tyndall.}
+\end{itemize}
+
+\divider
+
+\cvevent{Bartender}{Old Oak}{Apr. 2022 - Sept. 2022}{Cork, Ireland.}
+\begin{itemize}
+\item {Greeted guests and mixed cocktails.}
+\item {Assessed guest behaviour and reported intoxicated behaviour to the manager.}
+\item {Participated in pub incentives to promote the venue.}
+\end{itemize}
+
+\cvevent{Assistant Gardener}{}{Apr. 2021 - Sept. 2021}{Newcastle, Co. Tipperary, Ireland.}
+\begin{itemize}
+\item {Eliminated infestations with herbicides, pesticides, and fungicides.}
+\item {Improved appearance of lawns with expert mowing and edging.}
+\item {Elevated landscaping for customers with regular application of mulch and other special materials.}
+\end{itemize}
+
+\cvevent{Hardware Store Assistant}{McCarra’s Hardware}{Jun. 2020 - Dec. 2021}{Newcastle, Co. Tipperary, Ireland.}
+\begin{itemize}
+\item {Captured consistent customer sales with friendly, knowledgeable support.}
+\item {Maintained customer satisfaction by resolving issues and helped.}
+\item {Kept store presentable with frequent resets.}
+\end{itemize}
+
+
+\vspace{10px}
+\cvsection{Hobbies}
+\cvachievement{\faBook}{Reading}{Enthusiastic bookworm with a passion for literature mostly non-fiction, and science fiction. Love exploring new worlds through the pages of a good book.}
+\divider
+\cvachievement{\faGlass}{Socialising}{A people person who thrives on meaningful connections and engaging conversations. Active member of UCC Physics Society.}
+\divider
+\cvachievement{\faDesktop}{Video Games}{A dedicated gamer with a love for interactive storytelling, strategy, and competitive play.}
+
+\end{document}
+
